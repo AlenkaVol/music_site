@@ -11,8 +11,8 @@ SELECT name_compilation, release_year FROM compilation
 WHERE release_year BETWEEN 2018 AND 2020;
 
 -- Исполнители, чьё имя состоит из одного слова 
-SELECT name_compilation, release_year FROM compilation
-WHERE release_year BETWEEN 2018 AND 2020;
+SELECT name_singer FROM singer
+WHERE name_singer NOT LIKE '% %';
 
 -- Название треков, которые содержат слово «мой» или «my»
 SELECT name_track FROM track
